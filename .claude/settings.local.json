@@ -3,7 +3,8 @@
     "allow": [
       "Bash(grep -r \"from [''''].*components/ui['''']\" /c/studio.com/src --include=*.tsx --include=*.ts -l)",
       "Bash(xargs grep:*)",
-      "Bash(python -c \"import sys; print\\(f''Python {sys.version_info.major}.{sys.version_info.minor}''\\)\")"
+      "Bash(python -c \"import sys; print\\(f''Python {sys.version_info.major}.{sys.version_info.minor}''\\)\")",
+      "Bash(bun add:*)"
     ]
   }
 }

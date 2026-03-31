@@ -3,6 +3,7 @@ import { useParams, Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { ArrowLeft, Star, MapPin, Clock, Users, Wifi, Music, Mic, Camera, Monitor, Share2, Heart } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { toast } from "sonner";
 import BookingCalendar from "@/components/BookingCalendar";
 import MagneticButton from "@/components/MagneticButton";
 import Navbar from "@/components/Navbar";

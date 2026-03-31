@@ -2,12 +2,13 @@ import { useState, useRef, useEffect } from "react";
 import { motion } from "framer-motion";
 import Navbar from "@/components/Navbar";
 import SearchBar from "@/components/SearchBar";
-import StudioCard, { Studio } from "@/components/StudioCard";
+import StudioCard from "@/components/StudioCard";
+import { Studio } from "@/components/StudioCard";
+import { studios } from "@/data/studios";
 import StudioFilter from "@/components/StudioFilter";
 import QuickLookDrawer from "@/components/QuickLookDrawer";
 import MagneticButton from "@/components/MagneticButton";
 import { Button } from "@/components/ui/button";
-import { studios } from "@/data/studios";
 import { ArrowRight, Sparkles } from "lucide-react";
 
 const SpotlightHero = () => {

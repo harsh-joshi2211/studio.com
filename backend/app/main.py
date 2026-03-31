@@ -1,7 +1,7 @@
 from contextlib import asynccontextmanager
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from app.api import studios, bookings
+from app.api import studios, bookings, auth
 from app.core.config import settings
 from app.core.database import init_db, client
 import logging
@@ -63,6 +63,7 @@ app.add_middleware(
 # Include API routers
 app.include_router(studios.router)
 app.include_router(bookings.router)
+app.include_router(auth.router)
 
 
 @app.get("/health", tags=["health"])

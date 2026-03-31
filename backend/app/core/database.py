@@ -28,3 +28,4 @@ async def init_db() -> None:
     await database.bookings.create_index("studio_id")
     await database.bookings.create_index("booking_date")
     await database.bookings.create_index([("studio_id", 1), ("booking_date", 1)])
+    await database.users.create_index("email", unique=True)
